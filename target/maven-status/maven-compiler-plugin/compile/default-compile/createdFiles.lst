@@ -1,0 +1,10 @@
+com/springbootapp/ServletInitializer.class
+com/springbootapp/MyApplication.class
+com/springbootapp/aop/ProfilingAspect.class
+com/springbootapp/exception/BaseException.class
+com/springbootapp/trends/service/TrendsService.class
+com/springbootapp/trends/service/impl/TrendsServiceImpl.class
+com/springbootapp/trends/controller/LatestTrendsController.class
+com/springbootapp/configuration/EnableConfiguration.class
+com/springbootapp/aop/LoggingAspect.class
+com/springbootapp/exception/ApplicationExceptionHandler.class

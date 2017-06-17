@@ -1,0 +1,67 @@
+2017-06-17 00:17:29.405  INFO 4243 --- [main] com.springbootapp.MyApplication          : Starting MyApplication on balakrishh-HP-ENVY-TS-15-Notebook-PC with PID 4243 (/home/balakrishh/workspace/openshift/SpringBootApp/target/classes started by balakrishh in /home/balakrishh/workspace/openshift/SpringBootApp)
+2017-06-17 00:17:29.407 DEBUG 4243 --- [main] com.springbootapp.MyApplication          : Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-06-17 00:17:29.407  INFO 4243 --- [main] com.springbootapp.MyApplication          : No active profile set, falling back to default profiles: default
+2017-06-17 00:17:29.465  INFO 4243 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@bef2d72: startup date [Sat Jun 17 00:17:29 EDT 2017]; root of context hierarchy
+2017-06-17 00:17:30.014  INFO 4243 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-06-17 00:17:30.426  INFO 4243 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-06-17 00:17:30.435  INFO 4243 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-06-17 00:17:30.436  INFO 4243 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-06-17 00:17:30.496  INFO 4243 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-06-17 00:17:30.496  INFO 4243 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1035 ms
+2017-06-17 00:17:30.609  INFO 4243 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-17 00:17:30.613  INFO 4243 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-17 00:17:30.614  INFO 4243 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-17 00:17:30.614  INFO 4243 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-17 00:17:30.614  INFO 4243 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-17 00:17:30.681  WARN 4243 --- [main] ationConfigEmbeddedWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'latestTrendsController': Unsatisfied dependency expressed through field 'trendsService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'trendsServiceImpl': Unsatisfied dependency expressed through field 'twitter'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.social.twitter.api.Twitter' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2017-06-17 00:17:30.683  INFO 4243 --- [main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2017-06-17 00:17:30.701  INFO 4243 --- [main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2017-06-17 00:17:30.757 ERROR 4243 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field twitter in com.springbootapp.trends.service.impl.TrendsServiceImpl required a bean of type 'org.springframework.social.twitter.api.Twitter' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.social.twitter.api.Twitter' in your configuration.
+
+2017-06-17 00:21:54.797  INFO 4457 --- [main] com.springbootapp.MyApplication          : Starting MyApplication on balakrishh-HP-ENVY-TS-15-Notebook-PC with PID 4457 (/home/balakrishh/workspace/openshift/SpringBootApp/target/classes started by balakrishh in /home/balakrishh/workspace/openshift/SpringBootApp)
+2017-06-17 00:21:54.800 DEBUG 4457 --- [main] com.springbootapp.MyApplication          : Running with Spring Boot v1.5.3.RELEASE, Spring v4.3.8.RELEASE
+2017-06-17 00:21:54.801  INFO 4457 --- [main] com.springbootapp.MyApplication          : No active profile set, falling back to default profiles: default
+2017-06-17 00:21:54.846  INFO 4457 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@bef2d72: startup date [Sat Jun 17 00:21:54 EDT 2017]; root of context hierarchy
+2017-06-17 00:21:55.419  INFO 4457 --- [main] f.a.AutowiredAnnotationBeanPostProcessor : JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2017-06-17 00:21:55.816  INFO 4457 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2017-06-17 00:21:55.825  INFO 4457 --- [main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-06-17 00:21:55.826  INFO 4457 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.14
+2017-06-17 00:21:55.893  INFO 4457 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-06-17 00:21:55.894  INFO 4457 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1052 ms
+2017-06-17 00:21:56.031  INFO 4457 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-06-17 00:21:56.034  INFO 4457 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-06-17 00:21:56.034  INFO 4457 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-06-17 00:21:56.034  INFO 4457 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-06-17 00:21:56.034  INFO 4457 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-06-17 00:21:56.294  INFO 4457 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@bef2d72: startup date [Sat Jun 17 00:21:54 EDT 2017]; root of context hierarchy
+2017-06-17 00:21:56.344  INFO 4457 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/hello]}" onto public org.springframework.http.ResponseEntity<java.lang.String> com.springbootapp.controller.HelloWorldController.HelloWorld()
+2017-06-17 00:21:56.346  INFO 4457 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-06-17 00:21:56.346  INFO 4457 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-06-17 00:21:56.375  INFO 4457 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-17 00:21:56.375  INFO 4457 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-17 00:21:56.389  INFO 4457 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in applicationExceptionHandler
+2017-06-17 00:21:56.410  INFO 4457 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-06-17 00:21:56.429  INFO 4457 --- [main] oConfiguration$WelcomePageHandlerMapping : Adding welcome page: class path resource [static/index.html]
+2017-06-17 00:21:56.586  INFO 4457 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-06-17 00:21:56.634  INFO 4457 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2017-06-17 00:21:56.640  INFO 4457 --- [main] com.springbootapp.MyApplication          : Started MyApplication in 2.121 seconds (JVM running for 2.439)
+2017-06-17 00:22:13.899  INFO 4457 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-06-17 00:22:13.900  INFO 4457 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-06-17 00:22:13.915  INFO 4457 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 15 ms
+2017-06-17 00:22:13.944 DEBUG 4457 --- [http-nio-8080-exec-1] com.springbootapp.aop.LoggingAspect      : AOP...Before the Execution of class: com.springbootapp.controller.HelloWorldController method:HelloWorld
+2017-06-17 00:22:13.945 DEBUG 4457 --- [http-nio-8080-exec-1] com.springbootapp.aop.LoggingAspect      : AOP...Arguments passed: []
