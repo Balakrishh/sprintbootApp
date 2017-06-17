@@ -65,7 +65,7 @@
                     <verbose>true</verbose>
                     <images>
                         <image>
-                            <name>balakrishh/SpringBootApp</name>
+                            <name>balakrishh/springbootapp</name>
                             <build>
                                 <dockerFile>DockerFile</dockerFile>
                                 <assembly>
